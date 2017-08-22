@@ -1,12 +1,6 @@
-class BooksController < BlocWorks::Controller
-  def welcome
-    @book = "Eloquent Ruby"
-    render :welcome, other_book: "Shoddy JavaScript"
-  end
-
+class LibrariesController < BlocWorks::Controller
   def show
     @library = "Example's Library"
-    @book = "Eloquent Ruby"
     render :show
   end
 

@@ -2,11 +2,18 @@ PATH
   remote: ../bloc_works
   specs:
     bloc_works (0.1.0)
+      erubis (~> 2.7)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    erubis (2.7.0)
+    power_assert (0.2.6)
     rack (1.6.8)
+    rack-test (0.7.0)
+      rack (>= 1.0, < 3)
+    test-unit (3.2.5)
+      power_assert
 
 PLATFORMS
   ruby
@@ -14,6 +21,8 @@ PLATFORMS
 DEPENDENCIES
   bloc_works!
   rack (~> 1.6)
+  rack-test
+  test-unit
 
 BUNDLED WITH
    1.14.6
