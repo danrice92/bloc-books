@@ -1,8 +1,4 @@
-class Library < BlocRecord::Base
-  has_many :books
-  belongs_to :user
+require 'bloc_record/base'
 
-  def find
-    return "Example's Library"
-  end
+class Library < BlocRecord::Base
 end

@@ -1,3 +1,7 @@
+require 'pry'
+require 'pry-nav'
+require 'pry-stack_explorer'
+
 class BooksController < BlocWorks::Controller
   def welcome
     @book = "Eloquent Ruby"
@@ -6,6 +10,11 @@ class BooksController < BlocWorks::Controller
 
   def index
     render :index, books: Book.all
+  end
+
+  def show
+    render :show, book: Book.first
+    binding.pry
   end
 
   def new
