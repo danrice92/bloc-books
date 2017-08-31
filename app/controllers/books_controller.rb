@@ -1,5 +1,4 @@
 require 'pry'
-require 'pry-nav'
 require 'pry-stack_explorer'
 
 class BooksController < BlocWorks::Controller
@@ -13,8 +12,8 @@ class BooksController < BlocWorks::Controller
   end
 
   def show
-    render :show, book: Book.first
-    binding.pry
+    book = Book.find(params['id'])
+    render :show, book: book
   end
 
   def new
