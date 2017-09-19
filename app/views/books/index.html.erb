@@ -1,7 +1,7 @@
 <h1>All books</h1>
 
-<% books.each do |book| %>
-  <p><b>Name: </b><a href="show?id=<%= book.id %>"><%= book.name %></a></p>
+<% @books.each do |book| %>
+  <p><b>Name: </b><a href="/books/<%= book.id %>"><%= book.name %></a></p>
   <p><b>Author: </b><%= book.author %></p>
   <p><b>Pages: </b><%= book.pages %></p>
   <br>

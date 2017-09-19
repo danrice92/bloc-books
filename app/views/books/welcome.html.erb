@@ -1,4 +1,5 @@
 <div>
   <p>Welcome to BlocBooks!</p>
-  <p>Please start by reading <%= @book %>.</p>
+  <p>Please start by reading <a href="/books/<%= @book.id %>"><em><%= @book.name %></em></a>.</p>
+  <p>Or, if you have already memorized <em><%= @book.name %></em>, check out the <a href="/books">index</a>.</p>
 </div>
